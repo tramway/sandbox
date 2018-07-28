@@ -1,10 +1,12 @@
+import { APP_BASE_HREF } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { IframeChild } from './iframe.child';
 import { RouterModule, Routes } from '@angular/router';
+
+import { IframeChild } from './iframe.child';
 import { FirstRouteComponent } from './first.route.component';
-import { APP_BASE_HREF } from '@angular/common';
 import { IframeTestRootComponent } from './iframe.test.root.component';
+
 
 const routes: Routes = [
   {
@@ -24,7 +26,7 @@ const routes: Routes = [
   declarations: [
     IframeTestRootComponent,
     IframeChild,
-    FirstRouteComponent,
+    FirstRouteComponent
   ],
   providers: [
     { provide: APP_BASE_HREF, useValue: '/iframe.html' }
