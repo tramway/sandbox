@@ -3,7 +3,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input } from '@a
 import { HooksLogger } from './hooks.logger';
 
 @Component({
-  selector: 'app-root',
+  selector: 'lifecycle-hooks-root',
   templateUrl: `./root.component.html`,
   styles: [
       `/deep/ .test-component {
@@ -18,7 +18,7 @@ import { HooksLogger } from './hooks.logger';
   changeDetection: ChangeDetectionStrategy.OnPush
 
 })
-export class RootComponent extends HooksLogger {
+export class LifeCycleHooksRootComponent extends HooksLogger {
 
   constructor() {
     super();
